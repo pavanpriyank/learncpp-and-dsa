@@ -1,23 +1,18 @@
 #include <iostream>
 using namespace std;
-
 int main(){
+   int n;
+   cin>>n;
 
-    // to print natural numbers from 1 to 10
-
-    // for
-   
-
-    // while
-   int num=1;
-   while(num <= 10){
-    if(num% 2!= 0){
-        cout<<num<<endl;
+   for(int i=1;i<=n;i++){
+    for(int j=1;j<=i;j++){
+        cout<<"#";
     }
-     num++;
+     cout<<endl;
    }
-    
-    //do while
+
+
+
 
     return 0;
 }
