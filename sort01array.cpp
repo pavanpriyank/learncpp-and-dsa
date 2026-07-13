@@ -2,9 +2,27 @@
 #include<vector>
 using namespace std;
 
-void sortZeroesAndOnes(vector<int> &v){
+void sortZeroesAndOnes(vector<int> &v){    //this is for two pointer 
 
-    int zeroes_count =0;
+    int left_ptr=0;
+    int right_ptr=v.size()-1;
+
+    while(left_ptr<right_ptr){
+        if(v[left_ptr]==1 && v[right_ptr]==0){
+            v[left_ptr++]=0;
+            v[right_ptr--]=1;
+        }
+
+        if(v[left_ptr]==0){
+            left_ptr++;
+        }
+
+        if(v[right_ptr]==1){
+            right_ptr--;
+        }
+    }
+/* 
+    int zeroes_count =0;                        // this is for single pointer
 
     for(int ele:v){
         if(ele==0){
@@ -20,6 +38,8 @@ void sortZeroesAndOnes(vector<int> &v){
             v[i]=0;
         }
     }
+*/ 
+return;
 }
 int main(){
      
