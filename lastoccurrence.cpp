@@ -21,7 +21,7 @@ int main(){
     for(int i=v.size()-1;i>=0;i--){
     if(v[i]==x){
     occurrence=i;
-    break;
+    break;                        
     }
 } 
 
