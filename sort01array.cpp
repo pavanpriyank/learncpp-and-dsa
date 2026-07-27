@@ -8,7 +8,7 @@ void sortZeroesAndOnes(vector<int> &v){    //this is for two pointer
     int right_ptr=v.size()-1;
 
     while(left_ptr<right_ptr){
-        if(v[left_ptr]==1 && v[right_ptr]==0){
+        if(v[left_ptr]==1 && v[right_ptr]==0){      //if left is 1 or right is 0 change
             v[left_ptr++]=0;
             v[right_ptr--]=1;
         }

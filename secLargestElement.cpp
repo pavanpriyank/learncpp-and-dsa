@@ -33,7 +33,7 @@ int main(){
     int array[]={1,2,3,6,5,6};                 
     int n=6;                               
 
- /*
+ 
 int array[]={1,2,3,6,5,6};                 //for only single/unique type value
     int n=6;                               
     int indexoflargest= largestElementIndex(array,n);
@@ -48,7 +48,7 @@ int array[]={1,2,3,6,5,6};                 //for only single/unique type value
 //    }
     int secondlargestelement=largestElementIndex(array,n);
     cout<<array[secondlargestelement]<<endl;
-*/   
+
 
 cout<<(array , n)<<endl;
     return 0;
