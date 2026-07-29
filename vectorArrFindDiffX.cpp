@@ -4,9 +4,9 @@ int main(){
     int arr[]={-3,-1,1,6,8,12,15,19};
     int n=8;
     int x=4;
-
+    //code to check whether there is any pain wint the given absolute difference
     int i=0;
-    int j=0;
+    int j=1;
     bool found=false;
     while(i<n && j<n){
         if(abs(arr[i]-arr[j])==x){
