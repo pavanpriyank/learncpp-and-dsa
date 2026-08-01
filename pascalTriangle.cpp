@@ -14,7 +14,7 @@ vector<vector<int>>  pascalTriangle(int n){
             }                                                                                    //,  ,  ,  ,  ,}
             else{
                 pascal[i][j]= pascal[i-1][j] + pascal[i-1][j-1];     //main formula     
-            }
+            }      //this is for right side    //this is for left side 
         }
     }
     return pascal;
