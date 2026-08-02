@@ -3,6 +3,32 @@
 #include<climits>
 using namespace std;
 
+int LeftMostOne(vector<vector<int>> &V){   // alternate method
+
+    int  LeftMostOne = -1;
+    int   maxOnesRow = -1;
+    int j =V[0].size()-1;
+
+    //finding leftmost one in 0th row
+    while (j>=0 && V[0][j]==1 ){
+    LeftMostOne = j;
+    maxOnesRow = 0;
+    j--;
+    }
+    
+    // check in rest of the row if we find a one left to the leftMostOne 
+
+    for(int i=1;i<V.size();i++){
+       while (j>=0 && V[i][j]==1 ){
+            LeftMostOne = j;
+            j--;
+            maxOnesRow = i;  
+        }
+    }
+        
+    return  maxOnesRow;
+}
+
 int maximumOnesRows(vector< vector <int>> &V){
 
     int maxOnes=INT_MIN;
@@ -17,6 +43,7 @@ int maximumOnesRows(vector< vector <int>> &V){
                     maxOnes = NumberOfOnes;
                     maxOnesRow = i;
                 }
+                break;
             }
         }
     }
@@ -33,8 +60,9 @@ int main(){
             cin>>vec[i][j];
         }
     }
-    int result= maximumOnesRows(vec);
-    cout<< result<<endl;
+//  int result= maximumOnesRows(vec);
+    int result = LeftMostOne(vec);
+    cout<< result <<endl;
 
     return 0;
 }
