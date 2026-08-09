@@ -18,7 +18,7 @@ void  findfirstandlastintex( string s , char ch, int *first, int *last){
 }
 int main(){
 
-    string s = "qkodrfaaabac";
+    string s = "qkodaffivcbdkrfaaabacdjdkc";
     char ch = 'a';
     int first = -1;
     int last  = -1;
