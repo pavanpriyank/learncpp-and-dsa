@@ -1,4 +1,9 @@
 
+    if(n == 0) return 0;
+    //assumption 
+    return f(n-1) + ((n%2 == 0) ? (-n) : (n)); // calculate sum of first n-1 natural num with alternate, and we will add contri of n
+}
+int main(){
 
-        cout << endl;
-    }
+    cout<<f(3)<<"\n";
+    return 0;
