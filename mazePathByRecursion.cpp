@@ -9,7 +9,7 @@ int  f(int i, int j, int m,int n){
 
 int main(){
 
-    cout<<f(0, 0, 10, 10);
+    cout<<f(0, 0, 2, 3);
 
     return 0;
 }
