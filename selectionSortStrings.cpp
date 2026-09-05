@@ -1,4 +1,4 @@
-#include<iostream>
+#include<iostream>                               // ask, code not working properly
 #include<cstring>
 using namespace std;
 
@@ -33,3 +33,6 @@ int main(){
         cout<<fruits[i]<<" ";
     }
     cout<<endl;
+
+    return 0;
+}
