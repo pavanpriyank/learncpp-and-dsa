@@ -8,7 +8,7 @@ void selectionSort(char fruits[][60], int n){
 
         //finding the min element
         int min_index=i;
-        for(int j=j+1;j<n;j++){
+        for(int j=i+1;j<n;j++){
             if(strcmp(fruits[min_index], fruits[j]) > 0){
                 min_index =j;
             }
