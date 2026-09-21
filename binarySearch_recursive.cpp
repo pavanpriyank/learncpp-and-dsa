@@ -8,7 +8,7 @@ int binarysearchRecursive(vector<int> &input , int target , int lo , int hi){
        space:0(logn)    
     */
     if(lo>hi) return -1;
-    int mid = (lo + hi)/2;
+    int mid = lo + (hi - lo)/ 2;
     if(input[mid] == target) return mid;
     if(input[mid] < target){
         return binarysearchRecursive(input, target, mid + 1, hi);

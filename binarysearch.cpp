@@ -8,7 +8,7 @@ int binarySearch(vector<int> &input , int target){
     int hi = input.size() - 1; // end of the search space
     while(lo <= hi){
         //cal midpoint for the search space 
-        int mid = (lo + hi) / 2;
+        int mid = lo + (hi - lo)/ 2;
         if(input[mid] == target) return mid;
         else if(input[mid] < target){
             //discard the left of mid
