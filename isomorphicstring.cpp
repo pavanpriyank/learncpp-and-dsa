@@ -1,7 +1,7 @@
 #include<iostream>                  //ask
 #include<vector>
 #include<string>
-using namespace std;
+using namespace std;                 // isomorphic means  having same structure , character
 
 bool isIsomorphic(string s1, string s2){
 
