@@ -2,3 +2,4 @@ c/
 python/
 .vscode/
 *.class
+*.exe
