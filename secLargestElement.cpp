@@ -30,10 +30,6 @@ int largestElementIndex(int array[], int size){ //this is another method to find
 return second_max;
 }
 int main(){
-    int array[]={1,2,3,6,5,6};                 
-    int n=6;                               
-
- 
 int array[]={1,2,3,6,5,6};                 //for only single/unique type value
     int n=6;                               
     int indexoflargest= largestElementIndex(array,n);
