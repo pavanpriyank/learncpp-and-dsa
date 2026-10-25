@@ -89,6 +89,7 @@ void deletedAtTail(Node* &head){             // deleted at tail(last position)
 }
 
 void deletedAtposition(Node* &head, int pos){
+    
 
     if(pos==0){
         deletedAthead(head);
